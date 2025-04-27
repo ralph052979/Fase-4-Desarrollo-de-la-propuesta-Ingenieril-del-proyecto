@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notificaciones - Medifast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .notification {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .notification-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .notification-date {
+            font-size: 12px;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        .empty-message {
+            text-align: center;
+            color: #6c757d;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Notificaciones Recientes</h1>
+
+    <!-- Área de notificaciones -->
+    <div id="notificaciones">
+
+        <!-- Ejemplo de una notificación -->
+        <div class="notification">
+            <div class="notification-title">Recordatorio de vencimiento</div>
+            <div class="notification-date">Fecha: 25/07/2025</div>
+            <div>El medicamento *Paracetamol 500mg* vencerá en menos de 60 días. Consúltalo en tu zona.</div>
+        </div>
+
+        <div class="notification">
+            <div class="notification-title">Nuevo medicamento disponible</div>
+            <div class="notification-date">Fecha: 20/07/2025</div>
+            <div>¡Ibuprofeno 400mg ahora está disponible en tu área! Revisa la sección de consulta de medicamentos.</div>
+        </div>
+
+        <!-- Puedes agregar más notificaciones aquí -->
+
+    </div>
+
+    <!-- Si no hay notificaciones, muestra este mensaje -->
+    <!--
+    <div class="empty-message">
+        No tienes notificaciones pendientes.
+    </div>
+    -->
+
+</div>
+
+</body>
+</html>
