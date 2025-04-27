@@ -1,0 +1,80 @@
+<Solicitar html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar Medicamento - Medifast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Solicitar Medicamento</h1>
+
+    <form action="#" method="POST">
+        <label for="nombreMedicamento">Nombre del Medicamento:</label>
+        <input type="text" id="nombreMedicamento" name="nombreMedicamento" placeholder="Ingrese el nombre del medicamento" required>
+
+        <label for="cantidad">Cantidad Solicitada:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Número de unidades" required>
+
+        <label for="direccion">Dirección de Entrega:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección completa" required>
+
+        <label for="observaciones">Observaciones (opcional):</label>
+        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Comentarios adicionales sobre la solicitud"></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</div>
+
+</body>
+</html>
